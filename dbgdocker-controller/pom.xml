@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>dbgdocker-controller</artifactId>
-    <version>${revision}</version>
     <name>dbgdocker-controller</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -23,19 +22,17 @@
         </dependency>
 
         <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>dbgdocker-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-    </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    </dependencies>
 
 </project>
